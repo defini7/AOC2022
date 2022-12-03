@@ -3,13 +3,7 @@
 #include <string>
 #include <cstdint>
 
-/**
-* A, X - Rock
-* B, Y - Paper
-* C, Z - Scissors
-*/
-
-enum ScoreTableCodes : uint32_t
+enum ScoreTable : uint32_t
 {
 	Rock = 1,
 	Paper = 2,
