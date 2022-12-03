@@ -32,19 +32,19 @@ int main()
 		if (cResult == 'Y') nTotalScore += Draw;
 		if (cResult == 'Z') nTotalScore += Win;
 
-		if (cOpponent == 'A') // Rock
+		if (cOpponent == 'A')
 		{
 			if (cResult == 'X') nTotalScore += Scissors;
 			if (cResult == 'Y') nTotalScore += Rock;
 			if (cResult == 'Z') nTotalScore += Paper;
 		}
-		else if (cOpponent == 'B') // Paper
+		else if (cOpponent == 'B')
 		{
 			if (cResult == 'X') nTotalScore += Rock;
 			if (cResult == 'Y') nTotalScore += Paper;
 			if (cResult == 'Z') nTotalScore += Scissors;
 		}
-		else if (cOpponent == 'C') // Scissors
+		else if (cOpponent == 'C')
 		{
 			if (cResult == 'X') nTotalScore += Paper;
 			if (cResult == 'Y') nTotalScore += Scissors;
