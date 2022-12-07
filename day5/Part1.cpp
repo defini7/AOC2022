@@ -67,9 +67,6 @@ int main()
         size_t nAfterTo = sLine.find("to") + 3;
         size_t nTo = std::stoul(sLine.substr(nAfterTo, sLine.find_first_of(' ', nAfterTo) - 1));
 
-        stkStacks[nFrom - 1];
-        stkStacks[nTo - 1];
-
         for (size_t _ = 0; _ < nCount; _++)
         {
             char c = stkStacks[nFrom - 1].top();
