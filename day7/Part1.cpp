@@ -5,7 +5,7 @@
 #include <vector>
 #include <unordered_map>
 
-std::vector<std::string> Split(std::vector<std::string>& vecOutput, std::string sInput, std::string sDelimiter)
+void Split(std::vector<std::string>& vecOutput, std::string sInput, std::string sDelimiter)
 {
 	size_t nStart = 0;
 	size_t nEnd;
@@ -17,8 +17,6 @@ std::vector<std::string> Split(std::vector<std::string>& vecOutput, std::string 
 		nStart = nEnd + sDelimiter.length();
 	}
 	vecOutput.push_back(sInput.substr(nStart));
-
-	return vecOutput;
 }
 
 int main()
