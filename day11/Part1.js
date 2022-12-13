@@ -3,11 +3,13 @@ let solution = (input) => {
     let mod = 1
     const monkeys = []
     
+    // if it won't work just remove \r
     input = input.split('\r\n\r\n')
 
     console.log(input)
 
     for (let m of input) {
+        // if it won't work just remove \r
         m = m.split('\r\n')
 
         let num = +m[0].match(/(\d+):$/)[1];
