@@ -24,7 +24,7 @@ let solution = (input) => {
         }
     }
 
-    for (let i = 0; i < 10000; i++) {
+    for (let i = 0; i < 20; i++) {
         for (const m of monkeys) {
             for (let j = m.items.length - 1; j >= 0; j--) {
                 /*
@@ -33,7 +33,7 @@ let solution = (input) => {
                     we need to evaluate, and then we call eval function
                 */
                 let old = m.items[j]
-                old = Math.floor(eval(m.operation))
+                old = Math.floor(eval(m.operation) / 3)
 
                 monkeys[
                     (old % m.test === 0) ? 
